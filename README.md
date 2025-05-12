@@ -2,7 +2,7 @@
 
 Predicting movie theater audience counts using historical patterns, seasonal demand, and competitive environment.
 
-![header](assets/boxoffice-banner.png)
+![image](https://github.com/user-attachments/assets/69d12ce6-1808-4ae8-bba6-8c66ac9863bd)
 
 ## 📌 Overview
 
@@ -19,9 +19,14 @@ The core model incorporates **SARIMA-based forecasting** with exogenous regresso
 ## 📈 Methodology
 
 We modeled audience demand using a formula of the form:
+
 AudienceCount_d = α × Competition_d + Σ (β_t × AudienceCount_t + γ_t × Interest_t) + δ × MovieNeed_d + θ × Rating_d + ε_d
 
-Here, `MovieNeed` is forecasted with: MovieNeed_t = SARIMA(p,d,q)(P,D,Q)_s + β × Exog_t
+Here, `MovieNeed` is forecasted with: 
+
+MovieNeed_t = SARIMA(p,d,q)(P,D,Q)_s + β × Exog_t
+
+![image](https://github.com/user-attachments/assets/0f12a412-0ca3-4fe9-a12d-def6480f3cf1)
 
 Temporal variables such as **holiday, weekend, and vacation effects** are also encoded.
 
@@ -31,11 +36,9 @@ Temporal variables such as **holiday, weekend, and vacation effects** are also e
 - SARIMA modeling with exogenous variables
 - Data preprocessing & visualization
 
-# 🎬 BoxOffice Predictor
+---
 
 영화 관람객 수요를 다양한 요인을 바탕으로 예측하는 프로젝트입니다.
-
-![header](assets/boxoffice-banner.png)
 
 ## 📌 프로젝트 개요
 
@@ -52,9 +55,11 @@ Temporal variables such as **holiday, weekend, and vacation effects** are also e
 ## 📈 예측 방식
 
 다음과 같은 형태의 수식을 기반으로 관람객 수요를 계산합니다:
+
 AudienceCount_d = α × Competition_d + Σ (β_t × AudienceCount_t + γ_t × Interest_t) + δ × MovieNeed_d + θ × Rating_d + ε_d
 
 이때 `MovieNeed`는 SARIMA 기반 시계열 모델로 예측하며, 다음과 같은 외생 변수를 포함합니다:
+
 MovieNeed_t = SARIMA(p,d,q)(P,D,Q)_s + β × (휴일, 년도 계절성)
 
 ## 🛠️ 사용 기술
@@ -65,7 +70,7 @@ MovieNeed_t = SARIMA(p,d,q)(P,D,Q)_s + β × (휴일, 년도 계절성)
 
 ## 🖼️ Example Plot (예측 결과 예시)
 
-![prediction example](assets/prediction-example.png)
+![image](https://github.com/user-attachments/assets/2b1bab4d-3097-400c-acdc-065f75c7de42)
 
 ## 🧑‍💻 Authors (팀원)
 
